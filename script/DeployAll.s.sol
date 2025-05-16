@@ -5,6 +5,7 @@ import {Script, console} from "forge-std/Script.sol";
 import {MockUSDC} from "../src/MockUSDC.sol";
 import {NitroAdjudicator} from "../src/NitroAdjudicator.sol";
 import {MicroPaymentApp} from "../src/MicroPaymentApp.sol";
+import {MultiAssetHolder} from "../src/MultiAssetHolder.sol";
 
 contract DeployAll is Script {
     function run() external {
@@ -18,6 +19,12 @@ contract DeployAll is Script {
 
         MicroPaymentApp app = new MicroPaymentApp();
         console.log("MicroPaymentApp deployed at: ", address(app));
+
+        MultiAssetHolder multiAssetHolder = new MultiAssetHolder();
+        console.log(
+            "MultiAssetHolder deployed at: ",
+            address(multiAssetHolder)
+        );
 
         vm.stopBroadcast();
     }
