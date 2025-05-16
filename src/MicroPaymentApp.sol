@@ -11,7 +11,9 @@ import {NitroUtils} from "@nitro/src/libraries/NitroUtils.sol";
 
 // @ADVANCE: This can also be extended to allow for multiple participants like buyer, seller, and our system
 // But new architecture will be needed to handle the multiple participants, for now we will just focus on two participants
-contract MicroPayment is IForceMoveApp {
+
+// This is the App contract for ERC-7824
+contract MicroPaymentApp is IForceMoveApp {
     /*//////////////////////////////////////////////////////////////
                            STRUCTS AND ENUMS
     //////////////////////////////////////////////////////////////*/
