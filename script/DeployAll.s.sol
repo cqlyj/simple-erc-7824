@@ -2,10 +2,10 @@
 pragma solidity 0.8.28;
 
 import {Script, console} from "forge-std/Script.sol";
-import {MockUSDC} from "../src/MockUSDC.sol";
-import {NitroAdjudicator} from "../src/NitroAdjudicator.sol";
-import {MicroPaymentApp} from "../src/MicroPaymentApp.sol";
-import {MultiAssetHolder} from "../src/MultiAssetHolder.sol";
+import {MockUSDC} from "src/MockUSDC.sol";
+import {NitroAdjudicator} from "src/nitro/NitroAdjudicator.sol";
+import {MicroPaymentApp} from "src/nitro/MicroPaymentApp.sol";
+import {MultiAssetHolder} from "src/nitro/MultiAssetHolder.sol";
 
 contract DeployAll is Script {
     function run() external {
