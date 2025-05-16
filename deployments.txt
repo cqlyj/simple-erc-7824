@@ -1,0 +1,5 @@
+Mock USDC deployed at: 0xCd8ACe64798C15F14a1948B9Fa4197e5a73a8A7F
+
+Nitro Adjudicator deployed at: 0x16C57b79657f1ce191cc7D1CE5a3202e58FdD7B1
+
+Micro Payment App deployed at: 0x3d1b209A1e63FAfC4eb3E19F94cA46B4011873A3
