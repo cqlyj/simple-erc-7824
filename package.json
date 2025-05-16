@@ -1,0 +1,35 @@
+{
+  "name": "erc-7824",
+  "version": "1.0.0",
+  "description": "**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cqlyj/simple-erc-7824.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/cqlyj/simple-erc-7824/issues"
+  },
+  "homepage": "https://github.com/cqlyj/simple-erc-7824#readme",
+  "dependencies": {
+    "@erc7824/nitrolite": "^0.0.4",
+    "dotenv": "^16.5.0",
+    "viem": "^2.29.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.18",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
