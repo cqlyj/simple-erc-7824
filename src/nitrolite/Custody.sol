@@ -172,6 +172,11 @@ contract Custody is IChannel, IDeposit {
         // if (ch.participants[0]; != msg.sender) revert InvalidParticipant();
 
         Amount memory creatorDeposit = meta.expectedDeposits[CLIENT];
+
+        // This msg.sender is the real wallet
+        // But the participant is the state wallet
+        // That is, this function is called by wallet, but the participant is state wallet
+        // In our case, user will create this channel!
         _lockAccountFundsToChannel(
             msg.sender,
             channelId,
@@ -198,6 +203,8 @@ contract Custody is IChannel, IDeposit {
      * @param sig Signature of the participant on the funding state
      * @return The channelId of the joined channel
      */
+
+    // Our server will join the channel
     function join(
         bytes32 channelId,
         uint256 index,
