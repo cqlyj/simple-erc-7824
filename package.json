@@ -24,7 +24,9 @@
   "homepage": "https://github.com/cqlyj/simple-erc-7824#readme",
   "dependencies": {
     "@erc7824/nitrolite": "^0.0.4",
+    "@types/ws": "^8.18.1",
     "dotenv": "^16.5.0",
+    "readline-sync": "^1.4.10",
     "viem": "^2.29.4"
   },
   "devDependencies": {
